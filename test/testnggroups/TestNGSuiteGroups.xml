@@ -1,0 +1,24 @@
+<suite name="Suite">
+     <test name="CarTests">
+       	<groups>
+  		   	<run>
+ 				<exclude name="Sedan Car" />
+ 				<include name="Car" /> 				
+   		 	</run>
+ 		</groups>
+ 		<classes>
+     		<class name="testNG.groups.TestNGGroups" />   	    	
+     	</classes>
+     </test>
+<!--      <test name="TestNG Groups1"> -->
+<!--        	<groups> -->
+<!--   		   	<run> -->
+<!--  				<include name="take" />				 -->
+<!--    		 	</run> -->
+<!--  		</groups> -->
+<!--  		<classes> -->
+<!--      		<class name="testNG.groups.TestNGGroups" /> -->
+<!--  		</classes> -->
+<!--      </test> -->
+     
+ </suite>

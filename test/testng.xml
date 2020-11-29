@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="First Suite" parallel="classes" thread-count="3">
+   <test name="Wiki Test">
+    <classes>
+      <class name="dataDrivenTestingNG.NewTestNGTest"/>
+      <class name="dataDrivenTestingNG.NewTestNGTest1"/>      
+    </classes>
+  </test> <!-- Test -->  
+   <test name="Wiki Test1">
+    <classes>
+      <class name="dataDrivenTestingNG.NewTestNGTest"/>            
+    </classes>
+  </test> <!-- Test --> 
+</suite> <!-- Suite -->

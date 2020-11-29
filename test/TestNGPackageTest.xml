@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Package Suite" parallel="tests" thread-count="3">
+  <test name="Package Test">
+    <packages>
+        <package name="testNG.packageTNG1"></package>
+        <package name="testNG.packageTNG2"></package>
+        <package name="testNG.packageTNG3"></package>
+    </packages>
+  </test> <!-- Test -->
+  <test name="Package Test1">
+    <packages>
+        <package name="testNG.*"></package>        
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

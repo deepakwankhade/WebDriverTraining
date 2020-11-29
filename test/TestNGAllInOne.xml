@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All In One" parallel="false" verbose="1">
+  <test name="All In One Test">
+    <packages>
+     <package name = "testNG">
+        <include name= "testNG.packageTNG1">
+		    <classes>
+		      <class name="testNG.packageTNG1.TNG1Test1">
+		      	<methods>
+		      	    <include name="TNG1Test11"/>
+		      	</methods>
+		      </class>
+		      <class name="testNG.packageTNG1.TNG1Test2">
+		      	<methods>
+		      	    <include name="TNG1Test12"/>
+		      	</methods>
+		      </class>				      
+		    </classes>
+		    </include>
+        </package>
+    </packages>
+  </test> <!-- Test CTRL+SHIFT+C for commment-->
+
+</suite> <!-- Suite -->

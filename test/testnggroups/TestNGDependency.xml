@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="methods" thread-count="15">
+     <test name="TestNG Groups">
+       	<groups>
+  		   	<run>
+ 				<include name="cake"/>  						
+   		 	</run>
+ 		</groups>
+ 		<classes>     		     		    	     		
+<!--      		<class name="testNG.groups.TestNGGroups" /> -->
+     		<class name="testNG.groups.TestNGDependency" />        	
+ 		</classes>
+     </test>               
+ </suite>

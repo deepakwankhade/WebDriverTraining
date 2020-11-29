@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="First Suite" parallel="tests" thread-count="3">
+  <test name="Include Package">
+    <packages>
+        <package name="testNG.*">
+            <include name=".*with.*"></include>
+            <include name="testNG.packageTNG3"></include>
+        </package>        
+    </packages>
+  </test> <!-- Test -->
+ <test name="Exclude Package">
+    <packages>
+        <package name="testNG.*">
+            <exclude name=".*with.*"></exclude>
+            <exclude name="testNG.packageTNG3"></exclude>
+        </package>        
+    </packages>
+  </test> <!-- Test -->
+  <test name="Exclude Method">
+    <classes>
+      <class name="testNG.withSites.WikiAndFB">
+      	<methods>
+      	    <exclude name="testForWiki"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

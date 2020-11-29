@@ -1,0 +1,20 @@
+<suite name="Suite">
+     <test name="TestNG Groups">
+         <groups>
+         	<define name="MyGroup">
+      		   	<include name="Scooter" />	 
+      		   	<include name="make" />			
+	 		</define>
+	 		<define name="MyGroup1">
+      		    <exclude name="Car" />      		   	
+	 		</define>
+	   	   <run>
+	 			<include name="MyGroup"></include>
+	 			<include name="MyGroup1"></include>
+	  	   </run>
+  		</groups>
+ 		<classes>
+		    <class name="testNG.groups.TestNGGroups" />		    
+		</classes>
+     </test>
+ </suite>

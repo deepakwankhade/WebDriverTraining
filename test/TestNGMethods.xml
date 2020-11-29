@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="With Methods" parallel="none" verbose="10">
+  <test name="Wiki Method">
+    <classes>
+      <class name="testNG.withSites.WikiAndFB">
+      	<methods>
+      	    <include name="testForWiki"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Facebook Method">
+    <classes>
+       <class name="testNG.withSites.WikiAndFB">
+      	<methods>
+      	    <include name="testForFB"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

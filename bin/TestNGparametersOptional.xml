@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameter Test" parallel="tests">
+   <parameter name="Browser" value="FF"></parameter>
+  <test name="Parameter Not Provided">
+     <classes>
+      <class name="testNG.parameters.ParameterTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Parameter Provided">
+    <parameter name="Browser" value="CH"></parameter>
+     <classes>
+      <class name="testNG.parameters.ParameterTest"/>
+    </classes>
+  </test> <!-- Test -->
+ </suite> <!-- Suite -->
